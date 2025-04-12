@@ -5,6 +5,7 @@ background-color: #1f153d;
 */
 
 /* === Menu gauche === */
+
 .menu-gauche {
     position: fixed;
     top: 0;
@@ -74,6 +75,12 @@ html, body {
     align-items: center;    /* centre horizontalement */
     gap: 40px;              /* espace entre les zones */
 }
+
+
+
+
+
+/* Zone PROFIL */
 /* Zone PROFIL */
 .profil-zone {
     background-color: #1f153d;
@@ -96,6 +103,65 @@ html, body {
     font-size: 18px;
     line-height: 1.6;
 }
+
+.profil-zone h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.specialites-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.specialite {
+    width: 48%;
+    text-align: left;
+}
+
+.specialite h4 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+    color: #ffffff;
+}
+
+.specialite ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.specialite ul li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.specialite ul li::before {
+    content: "✔";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .specialites-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specialite {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
 
 
 /* Zone FORMATIONS */
