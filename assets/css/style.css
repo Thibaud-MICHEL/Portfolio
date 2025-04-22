@@ -732,6 +732,23 @@ html, body {
 }
 
 
+/* Zone JEU */
+.jeu-zone {
+    background-color: #1f153d;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
 
 
 
