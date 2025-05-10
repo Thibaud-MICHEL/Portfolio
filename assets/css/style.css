@@ -324,6 +324,65 @@ html, body {
 }
 
 
+/* Zone BEG */
+.projets-zone {
+    background-color: #1f153d;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    align-items: center;
+}
+.projets-zone h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.BEG {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.BEG-Documentation {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.download-btn {
+    background-color: transparent;
+    border: 2px solid #ffffff00;
+    color: #044672;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .download-btn:hover {
+    background-color: #ffffff00;
+    color: #fff;
+  }
+
+  .download-icon {
+    font-size: 18px;
+    transition: transform 0.3s;
+  }
+
+  .download-btn:hover .download-icon {
+    transform: translateY(3px);
+  }
 
 
 
@@ -584,7 +643,11 @@ html, body {
     text-align: center;
     align-items: center;
 }
-
+.VT-zone ul {
+    text-align: left;
+    padding-left: 20px;
+  list-style-position: inside;
+}
 .VT-zone h2 {
     font-size: 28px;
     margin-bottom: 15px;

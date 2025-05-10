@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="DNGK3eFMo58477gF2esgDB1iXdvOw5xV6uURqAoRq9k" />
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta name="description" content="Portfolio de Thibaud MICHEL - Etudiant en BTS SIO (Services Informatiques aux Organisations) option SISR (Solutions d'Infrastructure, Sytèmes et Réseaux)">
+  <meta name="keywords" content="MICHEL, Thibaud ,Portfolio,BTS SIO,SISR,Lycée Saint Paul Bourdon Blanc, Orléans">
+  <meta name="author" content="MICHEL Thibaud">
+  <title>Portfolio BTS SIO SISR | MICHEL Thibaud</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="menu-gauche">
+      <h1>MICHEL Thibaud</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html#profil"><i class="fas fa-user"></i> | Profil</a></li>
+          <li><a href="index.html#formations"><i class="fa fa-graduation-cap"></i> | Formations</a></li>
+          <li><a href="index.html#projets"><i class="fas fa-graduation-cap"></i> | Projets</a></li>
+          <li><a href="index.html#EP"><i class="fas fa-briefcase"></i> | Expériences Professionnelles</a></li>
+          <li><a href="index.html#certifications"><i class="fas fa-certificate"></i> | Certifications</a></li>
+          <li><a href="index.html#VT"><i class="fas fa-lightbulb"></i> | Veille Technologique</a></li>
+          <li><a href="index.html#contact"><i class="fas fa-envelope"></i> | Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="contenu-principal">
+       
+<section id="projets" class="projets-zone">
+    <h2>BEG</h2>
+  
+    <div class="BEG">
+      <h3>DOCUMENTATION :</h3>
+      <div class="BEG-Documentation">
+        Cahier des charges :
+        <button class="download-btn" onclick="downloadFile()">
+            Cahier_des_charges.pdf
+            <span class="download-icon">⬇</span>
+          </button>
+        
+          <script>
+            function downloadFile() {
+              const filename = 'cahierdescharges.pdf'; // Change ce nom selon ton fichier
+              const filePath = 'assets/beg/cahierdescharges.pdf'; // Change ce chemin selon ton fichier
+        
+              const link = document.createElement('a');
+              link.href = filePath;
+              link.download = filename;
+              link.click();
+            }
+          </script>
+
+
+      </div>
+      
+      <div class="BEG-Objectif">
+        <h3>OBJECTIF :</h3>
+        <p>Mise en place d'une infrastructure informatique complète et sécurisée pour l’entreprise BEG, avec centralisation des comptes, gestion réseau, services critiques, et sécurité renforcée.</p>
+      </div>
+
+      <div class="BEG-Env">
+        <h3>ENVIRONNEMENT MIS EN OEUVRE :</h3>
+        <p>Services Windows :</p>
+        <p>✅ Active Directory (AD)</p>
+        <p>Installation et promotion du contrôleur de domaine.</p>
+        <p>Création d’une forêt AD et d’un second contrôleur.</p>
+        <p>Mise en place d’un RODC (Read-Only Domain Controller).</p>
+        <p>Script PowerShell d’import massif des utilisateurs via CSV.</p>
+        <p>Sauvegarde / Restauration complète du service AD avec Windows Server Backup.</p>
+      </div>
+    </div>
+  
+
+  </section>
+
+</div>
+</body>
+</html>
