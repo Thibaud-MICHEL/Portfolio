@@ -1,4 +1,3 @@
-
 /* 
 background-color: #0f0925;
 background-color: #1f153d;
@@ -76,11 +75,6 @@ html, body {
     gap: 40px;              /* espace entre les zones */
 }
 
-
-
-
-
-/* Zone PROFIL */
 /* Zone PROFIL */
 .profil-zone {
     background-color: #1f153d;
@@ -164,6 +158,8 @@ html, body {
 
 
 
+
+
 /* Zone FORMATIONS */
 .formations-zone {
     background-color: #1f153d;
@@ -177,23 +173,22 @@ html, body {
     align-items: center;
 }
 
-  
-  /* Titre */
-  .formations-zone h2 {
+/* Titre */
+.formations-zone h2 {
     font-size: 32px;
     margin-bottom: 40px;
     color: #ffffff;
-  }
-  
-  /* Container des cartes */
-  .formations-container {
+}
+
+/* Container des cartes */
+.formations-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
-  }
-  
-  /* Cartes cliquables */
-  .formation-item {
+}
+
+/* Cartes cliquables */
+.formation-item {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -203,65 +198,298 @@ html, body {
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: inherit;
-  }
-  
-  .formation-item:hover {
+}
+
+.formation-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 20px rgba(255, 204, 112, 0.3);
-  }
-  
-  /* Logo */
-  .formation-logo {
+}
+
+/* Logo */
+.formation-logo {
     width: 60px;
     height: 60px;
     object-fit: contain;
     border-radius: 10px;
     background-color: white;
     padding: 5px;
-  }
-  
-  /* Texte */
-  .text-content {
+}
+
+/* Texte */
+.text-content {
     text-align: left;
-  }
-  
-  .text-content h3 {
+}
+
+.text-content h3 {
     font-size: 20px;
     margin: 0 0 8px;
     color: #ffffff;
-  }
-  
-  .text-content .date {
+}
+
+.text-content .date {
     font-size: 14px;
     color: #ffcc70;
     display: block;
     margin-bottom: 10px;
-  }
-  
-  .text-content p {
+}
+
+.text-content p {
     font-size: 16px;
     color: #e0e0e0;
     margin: 0;
-  }
-  
-  /* Responsive */
-  @media (max-width: 600px) {
+}
+
+/* Responsive */
+@media (max-width: 600px) {
     .formation-item {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
-  
+
     .formation-logo {
-      width: 50px;
-      height: 50px;
+        width: 50px;
+        height: 50px;
     }
-  
+
     .formations-zone h2 {
-      font-size: 24px;
+        font-size: 24px;
     }
-  }
-  
-  
+}
+
+
+
+
+
+
+
+
+/* ===== TITRES SECTION ===== */
+.competences-zone h2 {
+    color: #ffcc70;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.competences-zone h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #ffcc70;
+}
+
+.competence-categorie h3 {
+    color: #ffcc70;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 204, 112, 0.3);
+    display: inline-block;
+}
+/* ===== ZONE COMPÉTENCES ===== */
+.competences-zone {
+    background-color: #1f153d;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 40px;
+}
+
+/* ===== CONTENEURS ===== */
+.competences-container {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.competence-categorie {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== LISTE COMPÉTENCES ===== */
+.competence-liste {
+    list-style: none;
+    padding: 0;
+}
+
+.competence-liste li {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+
+.competence-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    color: #ffcc70;
+}
+
+/* ===== SUPERVISION ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.outil {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Style pour le logo Zabbix NATUREL */
+.logo-wrapper {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 15px;
+}
+.logo-wrapper-MP{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+}
+.custom-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Suppression du filtre couleur */
+}
+
+/* Icônes Font Awesome */
+.icon {
+    font-size: 50px;
+    color: #ffcc70;
+    margin-bottom: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .competences-container {
+        flex-direction: column;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .contenu-principal {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Nouveaux styles pour les séparations */
+.competence-section-separator {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 40px 0;
+    width: 100%;
+}
+
+.competence-categorie {
+    margin-bottom: 30px;
+}
+
+.competence-categorie.full-width {
+    width: 95%;
+}
+
+/* Ajustement du conteneur principal */
+.competences-zone {
+    background-color: #1f153d;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Ajustement du titre principal */
+.competences-zone h2 {
+    color: #ffcc70;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.competences-zone h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #ffcc70;
+}
+
+
+.outil h4 {
+    color: #ffcc70;
+    margin: 10px 0 5px;
+}
+
+.outil p {
+    color: #e0e0e0;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Animation au survol */
+.outil {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.outil:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 204, 112, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Zone PROJETS */
 .projets-zone {
@@ -322,6 +550,11 @@ html, body {
     background-color: #ffcc70;
     color: #1f153d;
 }
+
+
+
+
+
 
 
 /* Zone BEG */
@@ -386,8 +619,12 @@ html, body {
 
 
 
+
+
+
+
+
 /* Zone EP */
-/* ====== Conteneur principal ====== */
 .EP-zone {
     background-color: #1f153d;
     border-radius: 25px;
@@ -401,26 +638,22 @@ html, body {
     align-items: center;
 }
 
-/* ====== Titre ====== */
 .EP-zone h2 {
     font-size: 28px;
     margin-bottom: 15px;
 }
 
-/* ====== Paragraphes ====== */
 .EP-zone p {
     font-size: 18px;
     line-height: 1.6;
 }
 
-/* ====== Images ====== */
 .EP-zone img {
     width: 100px;
     float: left;
     margin-right: 15px;
 }
 
-/* ====== Timeline ====== */
 .timeline-simple {
     position: relative;
     padding-left: 30px;
@@ -428,18 +661,16 @@ html, body {
     padding-bottom: 30px;
 }
 
-/* Ligne verticale */
 .timeline-line {
     position: absolute;
     top: 0;
-    bottom: 0; /* étire la ligne jusqu'en bas */
+    bottom: 0;
     left: 10px;
     width: 3px;
     background-color: white;
     border-radius: 5px;
 }
 
-/* Élément de timeline */
 .EP-item {
     position: relative;
     margin-bottom: 40px;
@@ -448,11 +679,6 @@ html, body {
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Animation en cascade */
-.EP-item:nth-child(1) { animation-delay: 0.2s; }
-.EP-item:nth-child(2) { animation-delay: 0.4s; }
-/* tu peux en rajouter plus ici si tu ajoutes d'autres EP-item */
-
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -460,7 +686,6 @@ html, body {
     }
 }
 
-/* Bulle sur la ligne */
 .bullet {
     position: absolute;
     left: -3px;
@@ -472,7 +697,6 @@ html, body {
     border-radius: 50%;
 }
 
-/* Contenu de chaque bloc */
 .EP-content {
     padding-left: 15px;
     text-align: left;
@@ -498,7 +722,6 @@ html, body {
     color: white;
 }
 
-/* Liste à puces fléchées */
 .liste-fleches {
     list-style: none;
     padding-left: 0;
@@ -514,7 +737,6 @@ html, body {
     margin-right: 0.5em;
 }
 
-/* ====== Responsive ====== */
 @media screen and (max-width: 768px) {
     .EP-zone {
         width: 95%;
@@ -546,6 +768,15 @@ html, body {
     }
 }
 
+
+
+
+
+
+
+
+
+
 /* Zone CERTIFICATIONS */
 .certifications-zone {
     background-color: #1f153d;
@@ -569,12 +800,12 @@ html, body {
     line-height: 1.6;
 }
   
-  .filter-buttons {
+.filter-buttons {
     text-align: center;
     margin-bottom: 30px;
-  }
+}
   
-  .filter-btn {
+.filter-btn {
     background-color: #333;
     color: white;
     border: none;
@@ -583,34 +814,34 @@ html, body {
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
-  }
+}
   
-  .filter-btn.active,
-  .filter-btn:hover {
+.filter-btn.active,
+.filter-btn:hover {
     background-color: #ff9800;
-  }
+}
   
-  .certif-grid {
+.certif-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
-  }
+}
   
-  .certif-item {
+.certif-item {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     background-color: #111;
-  }
+}
   
-  .certif-item img {
+.certif-item img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 10px;
-  }
+}
   
-  .certif-overlay {
+.certif-overlay {
     position: absolute;
     bottom: 0;
     background: rgba(0,0,0,0.7);
@@ -619,18 +850,25 @@ html, body {
     padding: 10px;
     opacity: 0;
     transition: 0.3s ease-in-out;
-  }
+}
   
-  .certif-item:hover .certif-overlay {
+.certif-item:hover .certif-overlay {
     opacity: 1;
-  }
+}
   
-  .certif-overlay a {
+.certif-overlay a {
     color: #ff9800;
     font-weight: bold;
     text-decoration: none;
-  }
-  
+}
+
+
+
+
+
+
+
+
 /* Zone VT */
 .VT-zone {
     background-color: #1f153d;
@@ -704,6 +942,10 @@ html, body {
         width: 100%;
     }
 }
+
+
+
+
 
 
 /* Zone CONTACT */
@@ -795,31 +1037,126 @@ html, body {
 }
 
 
-/* Zone JEU */
-.jeu-zone {
-    background-color: #1f153d;
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 30px;
-    width: 80%;
-    max-width: 1000px;
-    text-align: center;
-    align-items: center;
+
+
+
+
+
+
+
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
+.modal-content {
+    background-color: #1f153d;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 60%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    color: white;
+}
 
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+.close-modal:hover {
+    color: white;
+}
 
+.modal-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.modal-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
 
+.modal-option:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
 
+.modal-option i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 
+.competences-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
 
+.competence-col {
+    flex: 1;
+    text-align: left;
+}
 
-/* === Media Queries (toujours à la fin du fichier CSS) === */
+.competence-col h4 {
+    color: #ffcc70;
+    margin-bottom: 15px;
+}
 
-/* Tablettes ou petits écrans */
+.competence-col ul {
+    padding-left: 20px;
+}
+
+.competence-col li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 80%;
+        margin: 20% auto;
+    }
+    
+    .modal-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .competences-content {
+        flex-direction: column;
+    }
+}
+
+/* === Media Queries === */
 @media screen and (max-width: 768px) {
     .menu-gauche {
         width: 30%;
@@ -830,7 +1167,6 @@ html, body {
     }
 }
 
-/* Smartphones ou très petits écrans */
 @media screen and (max-width: 480px) {
     .menu-gauche {
         width: 100%;
