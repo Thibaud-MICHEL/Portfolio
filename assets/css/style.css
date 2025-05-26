@@ -1177,3 +1177,35 @@ html, body {
         margin-left: 0;
     }
 }
+
+
+
+/* === Footer === */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  padding: 10px;
+  background-color: #1f153d;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Responsive pour le footer */
+@media screen and (max-width: 768px) {
+  footer {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
